@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+	background-color: rgb(239 246 255);
+	font-family: 'Inter', 'Arial';
+  
+  background-image: linear-gradient(rgba(203, 213, 225, .15) .1em, transparent .1em), linear-gradient(90deg, rgba(203, 213, 225, .15) .1em, transparent .1em);
+  background-size: 3em 3em;
+}
+
+section#main {
+	background-color: rgb(37 99 235);
+	color: rgba(219, 234, 254, 1);
+	padding: 0.875rem;
+	border-radius: 0.75rem;
+
+	cursor: pointer;
+	user-select: none;
+  animation-timing-function: ease-in;
+
+  filter: drop-shadow(0 35px 35px rgb(37 99 235 / 0.5));
+}
+
+section#main > h1 {
+	margin: 0;
+	font-family: 'Inter', 'Times New Roman';
+}
+
+section#content {
+	position: absolute;
+	opacity: 0;
+	color: rgba(219, 234, 254, 1);
+
+	display: none;
+	width: 100%;
+	height: 100%;
+
+	/* For flex mode */
+	flex-direction: column;
+	align-items: left;
+	justify-content: center;
+}
+
+section#content > h2 {
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0;
+}
+
+span.big {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-height: 100vh;
+  max-width: 100%;
+  padding: 1.5rem 0 1.5rem 0;
+  text-align: center;
+}
+
+.slide span {
+  opacity: 0.75;
+}
+
+.slide h1 {
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.slide h2 {
+  font-size: 1.9em;
+  font-weight: 600;
+}
+
+.slide h3 {
+  font-size: 1.5em;
+  font-weight: 450;
+  margin-bottom: 1rem;
+}
+
+.slide h4 {
+  font-weight: 300;
+}
+
+.image_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75vw;
+}
+
+.image_card > div {
+  outline: 4px solid rgba(23, 23, 23, 0.8);
+  outline-offset: -4px;
+  margin: 0;
+  background-color: rgb(23 23 23);
+}
+
+.image_card > h4 {
+  margin-top: 0.375rem;
+  font-weight: 500;
+}
+
+.image_card > h4 > span {
+  font-weight: 300;
+}
+
+.image_card img {
+  max-width: 100%;
+}
+
+.image_card #speaker {
+  padding: 0;
+}
+
+.card6 {
+  position: relative;
+}
+
+.card6 > h2 {
+  margin: 0.125rem;
+}
+
+.card6 h4 {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.card6 #countdown {
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.card6 #countdown > section {
+  display: flex;
+  align-items: center;
+}
+
+.card6 #daftar {
+  background-color: rgb(16 185 129);
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+
+  filter: drop-shadow(0 25px 25px rgb(16 185 129 / 0.25));
+}
+
+.card6 #daftar:hover {
+  text-decoration: underline;
+}
+
+.card6 #daftar a {
+  text-decoration: none;
+  font-size: 1.75em;
+  font-weight: 750;
+  color: rgb(2 44 34);
+}
+
+.card6 #note {
+  position: absolute;
+  bottom: 3vh;
+}
+
+.card2, .card4, .card6 {
+  background-color: rgb(23, 37, 84);
+}
+
+.card1 * {
+  margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .slide {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+
+  .slide h2 {
+    font-size: 1.4em;
+  }
+
+  .slide h3 {
+    font-size: 1.2em;
+  }
+
+  .image_card > img {
+    max-width: 100%;
+  }
+
+  #note {
+    margin: 0 0.5rem 0 0.5rem;
+  }
+
+  .time_unit img {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-height: 850px) {
+  .slide h2 {
+    font-size: 1.4em;
+  }
+  
+  .image_card > img {
+    max-height: 50vh;
+  }
+}
